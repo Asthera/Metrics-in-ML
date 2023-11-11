@@ -50,8 +50,12 @@ f1 = f1_score(y_true, y_pred) # 2 * (Precision * Recall) / (Precision + Recall)
 ### Area Under the Receiver Operating Characteristic Curve <a name="AUC-ROC"></a>
 Evaluates the model's ability to distinguish between positive and negative classes across different threshold values.
 Useful when assessing the model's performance across different discrimination thresholds.
+
+This metric is commonly used for binary classification problems with class probabilities.
 ```python 
 from sklearn.metrics import roc_auc_score
 auc_roc = roc_auc_score(y_true, y_scores)
 ```
-
+<p align="center">
+  <img src="" title="hover text">
+</p>
