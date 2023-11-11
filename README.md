@@ -77,6 +77,6 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_true, y_pred)
 ```
 <p align="center">
-  <img src="https://github.com/Asthera/Metrics-in-ML/blob/main/sphx_glr_plot_roc_thumb.png" title="hover text">
+  <img src="https://github.com/Asthera/Metrics-in-ML/blob/main/conf_matrix.jpg" title="hover text">
 </p>
 
