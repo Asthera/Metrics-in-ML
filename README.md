@@ -16,8 +16,17 @@ Metrics are used to monitor and measure the performance of a model (during train
 <details>
   <summary>Regression</summary>
 
-  1. [TODO](#Regression)
+
 </details>
+
+<details>
+  <summary>TODO</summary>
+  
+  1. [TODO](#Regression)
+x
+  
+</details>
+
 
 
 
