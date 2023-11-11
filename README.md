@@ -84,10 +84,10 @@ cm = confusion_matrix(y_true, y_pred)
 
 ## TODO <a name="TODO"></a>
 Maked for:
--[X] Classification
--[ ] Regression
--[ ] Segmentation
--[ ] Object Detection
+- [X] Classification
+- [ ] Regression
+- [ ] Segmentation
+- [ ] Object Detection
 
 
 
