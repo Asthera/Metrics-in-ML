@@ -10,9 +10,10 @@ Metrics are used to monitor and measure the performance of a model (during train
     4. [F1-Score](#F1-Score)
     5. [AUC-ROC](#AUC-ROC)
     6. [Confusion Matrix](#ConfusionMatrix)
-3. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-4. [Another paragraph](#paragraph2)
+3. [Regression](#Regression)
+4. [TODO](#Regression)
+
+
 
 ## Classification metrics <a name="introduction"></a>
 Metrics are used to monitor and measure the performance of a model (during training and testing), and don’t need to be differentiable. 
@@ -67,7 +68,7 @@ auc_roc = roc_auc_score(y_true, y_scores)
 </p>
 
 
-### Confusion Matrix: <a name="ConfusionMatrix"></a>
+### Confusion Matrix <a name="ConfusionMatrix"></a>
 A table that describes the performance of a classification algorithm.
 Provides a detailed breakdown of true positives, true negatives, false positives, and false negatives.
 
@@ -79,4 +80,23 @@ cm = confusion_matrix(y_true, y_pred)
 <p align="center">
   <img src="https://github.com/Asthera/Metrics-in-ML/blob/main/conf_matrix.jpg" title="hover text">
 </p>
+
+
+## TODO <a name="TODO"></a>
+Maked for:
+-[X] Classification
+-[ ] Regression
+-[ ] Segmentation
+-[ ] Object Detection
+
+
+
+## Inspiraion
+
+Classification: Accuracy, Precision, Recall, F-1 score. I would probably use precision and recall rather than accuracy.
+Regression: Mean Square error, Root Mean Square Error, Mean Absolute Error.
+Segmentation: Mean Intersection over Union (IOU), Dice Coefficient, Pixel Accuracy.
+Object Detection: Average Precision (AP) and Mean Average Precision (mAP)
+Pose Estimation: Percentage of Detected Joints, Object Keypoint Similarity, Mean Per Joint Position Error.
+
 
