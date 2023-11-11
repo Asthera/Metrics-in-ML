@@ -3,21 +3,55 @@
 Metrics are used to monitor and measure the performance of a model (during training and testing).
 
 # Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
+1. [Сlassification](#Сlassification)
+    1. [Accuracy](#Accuracy)
+    2. [Precision](#Precision)
+    3. [Recall](#Recall)
+    4. [F1-Score](#F1-Score)
+    5. [AUC-ROC](#AUC-ROC)
+3. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+4. [Another paragraph](#paragraph2)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
+## Classification metrics <a name="introduction"></a>
+Metrics are used to monitor and measure the performance of a model (during training and testing), and don’t need to be differentiable. 
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
+### Accuracy <a name="Accuracy"></a>
+Measures the overall correctness of predictions.
+Useful when classes are balanced, and you want a general sense of the model's performance.
+```python 
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_true, y_pred)
+```
 
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
+### Precision <a name="Precision"></a>
+Measures the ability of the model to make correct positive predictions.
+Useful when minimizing false positives is critical, such as in medical diagnoses or fraud detection.
+```python 
+from sklearn.metrics import precision_score
+precision = precision_score(y_true, y_pred) # (True Positives) / (True Positives + False Positives)
+```
 
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
+### Recall (Sensitivity or True Positive Rate) <a name="Recall"></a>
+Measures the model's ability to identify all actual positives.
+Useful when minimizing false negatives is crucial, as in disease detection or search and rescue.
+```python 
+from sklearn.metrics import recall_score
+recall = recall_score(y_true, y_pred) # (True Positives) / (True Positives + False Negatives)
+```
 
+### F1-Score <a name="F1-Score"></a>
+Balances precision and recall, providing a single metric that considers both false positives and false negatives.
+Useful when you want to strike a balance between precision and recall.
+```python 
+from sklearn.metrics import f1_score
+f1 = f1_score(y_true, y_pred) # 2 * (Precision * Recall) / (Precision + Recall)
+```
+### Area Under the Receiver Operating Characteristic Curve <a name="AUC-ROC"></a>
+Evaluates the model's ability to distinguish between positive and negative classes across different threshold values.
+Useful when assessing the model's performance across different discrimination thresholds.
+```python 
+from sklearn.metrics import roc_auc_score
+auc_roc = roc_auc_score(y_true, y_scores)
+```
 
