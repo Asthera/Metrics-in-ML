@@ -2,16 +2,23 @@
 
 Metrics are used to monitor and measure the performance of a model (during training and testing).
 
-# Table of contents
-1. [Сlassification](#Сlassification)
-    1. [Accuracy](#Accuracy)
-    2. [Precision](#Precision)
-    3. [Recall](#Recall)
-    4. [F1-Score](#F1-Score)
-    5. [AUC-ROC](#AUC-ROC)
-    6. [Confusion Matrix](#ConfusionMatrix)
-3. [Regression](#Regression)
-4. [TODO](#Regression)
+<details>
+  <summary>Classification</summary>
+
+  1. [Accuracy](#Accuracy)
+  2. [Precision](#Precision)
+  3. [Recall](#Recall)
+  4. [F1-Score](#F1-Score)
+  5. [AUC-ROC](#AUC-ROC)
+  6. [Confusion Matrix](#ConfusionMatrix)
+</details>
+
+<details>
+  <summary>Regression</summary>
+
+  1. [TODO](#Regression)
+</details>
+
 
 
 
