@@ -57,5 +57,5 @@ from sklearn.metrics import roc_auc_score
 auc_roc = roc_auc_score(y_true, y_scores)
 ```
 <p align="center">
-  <img src="" title="hover text">
+  <img src="https://github.com/Asthera/Metrics-in-ML/blob/main/sphx_glr_plot_roc_thumb.png" title="hover text">
 </p>
